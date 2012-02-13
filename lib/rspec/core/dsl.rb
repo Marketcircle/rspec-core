@@ -17,6 +17,7 @@ module RSpec
       def describe(*args, &example_group_block)
         RSpec::Core::ExampleGroup.describe(*args, &example_group_block).register
       end
+      alias_method :context, :describe
     end
   end
 end
