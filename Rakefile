@@ -81,3 +81,7 @@ task :relish, :version do |t, args|
 end
 
 task :default => [:spec, "spec:ui", :cucumber]
+
+require 'rake/compiletask'
+Rake::CompileTask.new
+
